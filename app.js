@@ -5,7 +5,7 @@ const controlador = require("./controlador/control"); // Paso 7: Requerir el mó
 // Resto del código que utiliza la variable 'conectar'
 
 const app = express(); // Paso 1: Crear una instancia de Express y asignarla a la variable 'app'
-
+const port = process.env.PORT
 //hola mundo
 //app.get('/',function(req,res){
 //  res.send("Hola mundo")
@@ -39,8 +39,8 @@ app.set("views", "./vista");
 app.set("view engine", "ejs");
 
 // Paso 2: Iniciar el servidor en el puerto 3000 y mostrar un mensaje en la consola
-app.listen("3000", function () {
-  console.log("Aplicación Iniciada : http://localhost:3000/");
+app.listen(port, function () {
+  console.log(`Servidor iniciado en el puerto ${port}`);
 });
 
 // Paso 3: Definir una ruta para el método GET en la ruta  '/clientes' que llama a la función 'leer' del módulo 'control.js'
