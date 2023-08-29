@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soleado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="img/logo.png">
+        </a>
+
+
+        <div class="menu">
+            <ul id="lista-menu">
+                <li class="li-menu"></i><i class="bi bi-people-fill"></i><a  href="clientes">Clientes CRUD</a></li>
+                <li class="li-menu"></i><i class="bi bi-house-check-fill"></i><a  href="index.html">Inicio</a></li>
+                <li class="li-menu"><i class="bi bi-bag-heart-fill"></i><a  href="tienda.html">Tienda</a></li>
+                <li class="li-menu"><i class="bi bi-bookmark-check-fill"></i><a  href="nosotros.html">Quines somos?</a></li>
+                <li class="li-menu"><i class="bi bi-envelope-check-fill"></i><a  href="contacto.html">Escribenos!</a></li>
+                <li class="icono-carrito"><a href="carrito.html"><i class="bi bi-cart-check-fill"></i></a></li>
+                <a href="#" id="cerrar" class="bi bi-x-circle-fill"></a>
+            </ul>
+        </div>
+
+        <div id="movil">
+            <a href="carrito.html"><i class="bi bi-cart-check-fill"></i></a>
+            <i id="hamburguesa" class="bi bi-list"></i>
+        </div>
+
+    </header>
+
+    <section id="encabezadoPagina" class="nosotrosEncabezado">    
+        <h2>#YoComproSoleado</h2>        
+        <p>Wow lo que llevas esta aqui!</p>
+    </section>
+
+
+
+    <section id="carrito" class="contenedorSections">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Eliminar</td>
+                    <td>Gafas</td>
+                    <td>Detalle</td>
+                    <td>Precio</td>
+                    <td>Cantidad</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody class="contenedorCarrito">
+                <!-- Aqui se añaden los productos -->
+            </tbody>
+        </table>
+        <div id="mensaje-Carrito-Vacio" style="display: none;">
+            Carrito Vacio<i class="bi bi-emoji-frown-fill"></i>
+        </div>
+    </section>
+
+    <section id="agregarAlCarrito" class="contenedorSections">
+        <div id="cupon">
+            <h3>Ingresa Tu Cupon</h3>
+            <div>
+                <input type="text" placeholder="Ingresa el Cupon">
+                <button class="botonSuscripcion">Aplicar</button>
+            </div>
+        </div>
+
+        <div id="Subtotal">
+            <h3>Totales del Carrito</h3>
+            <table>
+                <tr>
+                    <td>Carrito Subtotal</td>
+                    <td class="carritoSubtotal"></td>
+                </tr>
+                <tr>
+                    <td>Envio</td>
+                    <td>Gratis</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong class="carritoTotal"></strong></td>
+                </tr>
+            </table>
+            <button class="botonSuscripcion comprarAhora">Comprar Ahora!</button>
+        </div>
+    </section>
+
+
+
+
+    <footer class="contenedorSections">
+        <div class="footer-columna-izquierda">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contacto</h4>
+            <p><strong>Dirección:</strong> Avenida Siempreviva 742</p>
+            <p><strong>Telefono:</strong> +01 234 5678</p>
+            <p><strong>Horario:</strong> 09:00 am - 18:00, Lunes - Viernes</p>
+            <div class="siguenos">
+                <h4>Siguenos</h4>
+                <div class="redes">
+                    <i class="bi bi-whatsapp"></i>
+                    <i class="bi bi-messenger"></i>
+                    <i class="bi bi-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-columna-izquierda">
+            <h4>Soleado</h4>
+            <a href="#">Quienes somos?</a>
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="#">Terminos y Condiciones</a>
+        </div>
+
+        
+
+        <div class="footer-columna-derecha">
+            <img src="img/mediosPago/pagos.png" alt="medios de pago">
+        </div>
+        <div class="derechos">
+            <p>© 2023, Todos los derechos reservados Soleado</p>
+        </div>
+    </footer>
+
+
+
+   <script src="script.js"></script> 
+</body>
+</html>

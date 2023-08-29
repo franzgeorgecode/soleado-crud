@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soleado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="img/logo.png">
+        </a>
+
+
+        <div class="menu">
+            <ul id="lista-menu">
+                <li class="li-menu"> <i class="bi bi-people-fill"></i> <a href="clientes">Clientes CRUD</a> </li>
+                <li><button class="ingresar" id="ingreso" onclick="window.location.href = 'paginaAcceso.html';">Ingresar</button></li>
+                <li class="li-menu"></i><i class="bi bi-house-check-fill"></i><a  href="index.html">Inicio</a></li>
+                <li class="li-menu"><i class="bi bi-bag-heart-fill"></i><a  href="tienda.html">Tienda</a></li>
+                <li class="li-menu"><i class="bi bi-bookmark-check-fill"></i><a  href="nosotros.html">Quines somos?</a></li>
+                <li class="li-menu"><i class="bi bi-envelope-check-fill"></i><a  href="contacto.html">Escribenos!</a></li>
+                <li class="icono-carrito"><a href="carrito.html"><i class="bi bi-cart-check-fill"></i></a></li>
+                <a href="#" id="cerrar" class="bi bi-x-circle-fill"></a>
+            </ul>
+        </div>
+
+        <div id="movil">
+            <a href="carrito.html"><i class="bi bi-cart-check-fill"></i></a>
+            <i id="hamburguesa" class="bi bi-list"></i>
+        </div>
+
+    </header>
+
+
+
+    <section id="banerPrincipal" class="banerPrincipal">
+        <div id="banerPrincipalTexto" class="banerPrincipalTexto">
+            <h4 class="banerPrincipal-h4">Nueva Temporada</h4>
+            <h2 class="banerPrincipal-h2">Oferta del Mes</h2>
+            <h1 class="banerPrincipal-h1">En Soleado!!!</h1>
+            <p>Ahorra hasta el 70% de Descuento! </p>
+            <button onclick="window.location.href = 'tienda.html';" class="banerPrincipalBoton">Comprar Ahora!</button>
+        </div>
+    </section>
+
+
+
+    <section id="caracteristicas" class="contenedorSections">
+        <div class="caracter-box">
+            <img src="img/caracter/c1.png" alt="Envio Gratis">
+            <h6>Envio Gratis</h6>
+        </div>
+        <div class="caracter-box">
+            <img src="img/caracter/c2.png" alt="Promociones">
+            <h6>Promociones</h6>
+        </div>
+        <div class="caracter-box">
+            <img src="img/caracter/c3.png" alt="Garantia">
+            <h6>Garantia</h6>
+        </div>
+    </section>
+
+    <section id="gafasSection" class="contenedorSections">
+        <h2>Los Más Vendidos</h2>
+        <p>Colecciones Exclusivas más vendidas</p>
+        <section class="gafas-contenedor" id="listaGafas">
+            <div class="gafas" onclick="window.location.href='gafas1.html';">
+                <img src="img/gafas/g1.jpg" alt="">
+                <div class="descripcion">
+                    <span>Radiante</span>
+                    <h5>Elegancia bajo el sol.</h5>
+                    <div class="estrellas">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$99.000</h4>
+                </div>
+                <a href="#"><i class="bi bi-cart-check-fill carrito"></i></a>
+            </div>
+
+            <div class="gafas" onclick="window.location.href='gafas2.html';">
+                <img src="img/gafas/g2.jpg" alt="">
+                <div class="descripcion">
+                    <span>Brillantez</span>
+                    <h5>Resalta tu estilo.</h5>
+                    <div class="estrellas">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$99.000</h4>
+                </div>
+                <a href="#"><i class="bi bi-cart-check-fill carrito"></i></a>
+            </div>
+
+            <div class="gafas" onclick="window.location.href='gafas3.html';">
+                <img src="img/gafas/g3.jpg" alt="">
+                <div class="descripcion">
+                    <span>Solaris</span>
+                    <h5>Protección y sofisticación.</h5>
+                    <div class="estrellas">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$99.000</h4>
+                </div>
+                <a href="#"><i class="bi bi-cart-check-fill carrito"></i></a>
+            </div>
+        
+        </section>
+    </section>
+
+    <section id="banerPromocion" class="contenedorBaners">
+        <h4>Las Mejores</h4>
+        <h2>Más del <span>30% de Descuento</span>  - en la Linea de Polarizadas</h2>
+    </section>
+
+    <section id="gafasSection" class="contenedorSections">
+      <h2>Las Ultimas que han llegado!</h2>
+        <p>Las Polarizadas para el verano</p>
+        <section class="gafas-contenedor" id="listaGafas">
+            <div class="gafas" onclick="window.location.href='gafas7.html';">
+                <img src="img/gafas/n1.jpg" alt="">
+                <div class="descripcion">
+                    <span>Eclipse</span>
+                    <h5>Un toque de misterio.</h5>
+                    <div class="estrellas">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$69.000</h4>
+                </div>
+                <a href="#"><i class="bi bi-cart-check-fill carrito"></i></a>
+            </div>
+
+            <div class="gafas" onclick="window.location.href='gafas8.html';">
+                <img src="img/gafas/n2.jpg" alt="">
+                <div class="descripcion">
+                    <span>Vanguardia</span>
+                    <h5>Moda sin límites.</h5>
+                    <div class="estrellas">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$69.000</h4>
+                </div>
+                <a href="#"><i class="bi bi-cart-check-fill carrito"></i></a>
+            </div>
+
+            <div class="gafas" onclick="window.location.href='gafas9.html';">
+                <img src="img/gafas/n3.jpg" alt="">
+                <div class="descripcion">
+                    <span>Horizonte</span>
+                    <h5>Explora nuevos estilos.</h5>
+                    <div class="estrellas">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$69.000</h4>
+                </div>
+                <a href="#"><i class="bi bi-cart-check-fill carrito"></i></a>
+            </div>
+        </section>   
+    </section>   
+    
+    
+    <section id="banerEnganche" class="contenedorSections">
+        <div class="banerEnganche-box">
+            <h4>Dias de descuentos increibles</h4>
+            <h2>Compra 2x1 </h2>
+            <span>Pagas solo las de mayor valor</span>
+        </div>
+
+        <div class="banerEnganche-box banerEnganche-box2">
+            <h4>Coleccion Iconica</h4>
+            <h2>Obten las tuyas!</h2>
+            <span>Las clasicas estan siempre de moda!</span>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <section id="suscripcion" class="contenedorSections contenedorBaners">
+        <div class="suscripcion-texto">
+            <h4>Suscribete</h4>
+            <p>Haz parte de nuestra comunidad <span>Obten ofertas especiales.</span>
+            </p>
+        </div>
+        <div class="formularioSuscripcion">
+            <input type="text" placeholder="Tu mejor correo">
+            <button class="botonSuscripcion">Me uno!</button>
+        </div>
+    </section>
+
+
+
+    <footer class="contenedorSections">
+        <div class="footer-columna-izquierda">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contacto</h4>
+            <p><strong>Dirección:</strong> Avenida Siempreviva 742</p>
+            <p><strong>Telefono:</strong> +01 234 5678</p>
+            <p><strong>Horario:</strong> 09:00 am - 18:00, Lunes - Viernes</p>
+            <div class="siguenos">
+                <h4>Siguenos</h4>
+                <div class="redes">
+                    <i class="bi bi-whatsapp"></i>
+                    <i class="bi bi-messenger"></i>
+                    <i class="bi bi-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-columna-izquierda">
+            <h4>Soleado</h4>
+            <a href="#">Quienes somos?</a>
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="#">Terminos y Condiciones</a>
+        </div>
+
+        
+
+        <div class="footer-columna-derecha">
+            <img src="img/mediosPago/pagos.png" alt="medios de pago">
+        </div>
+        <div class="derechos">
+            <p>© 2023, Todos los derechos reservados Soleado</p>
+        </div>
+    </footer>
+
+
+
+   <script src="script.js"></script> 
+</body>
+</html>
