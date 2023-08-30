@@ -1121,60 +1121,55 @@ footer .derechos {
     justify-content: center;
  }
 
- #clientesitos table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    white-space: nowrap;
-    overflow-x: auto;
-}
+ 
 
-#clientesitos th,
-#clientesitos td {
-    padding: 12px 15px;
-    text-align: left;
-    border: 1px solid #ccc;
-    color: black;
-}
-
-#clientesitos th {
-    background-color: black;
-    color: white;
-    font-weight: bold;
-}
-
-#clientesitos tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-#clientesitos tr:hover {
-    background-color: #ddd;
-}
-
-.tabla-clientes {
-    margin: 30px 15%;
-    width: 80%;
-    height: 50%;
-    background: #000;
-    border: 2px solid #000;
-    border-radius: 20px;
-    backdrop-filter: blur(30px);
-    box-shadow: 0 0 30px #D7E626;
-    display: flex;
-   
+ #clientesitos th,
+ #clientesitos td {
+     padding: 12px 15px;
+     text-align: center; /* Cambiado a centrar horizontal y verticalmente */
+     border: 1px solid #ccc;
+     color: black;
+     word-wrap: break-word; /* Agregado para evitar desbordamiento de texto */
+ }
+ 
+ 
+ #clientesitos th {
+     background-color: black;
+     color: white;
+     font-weight: bold;
+ }
+ 
+ #clientesitos tr:nth-child(even) {
+     background-color: #f2f2f2;
+ }
+ 
+ #clientesitos tr:hover {
+     background-color: #ddd;
+ }
+ 
+ .tabla-clientes {
+     margin: 30px 15%;
+     width: 80%;
+     height: 50%;
+     background: #000;
+     border: 2px solid #000;
+     border-radius: 20px;
+     backdrop-filter: blur(30px);
+     box-shadow: 0 0 30px #D7E626;
+     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    }
-
-.table {
-    width: 80%;
-    min-width: 700px;
-    margin: 10%;
-    background-color: #d7e626;
-    border: 1px solid #e0e0e0;
-}
+ }
+ 
+ .table {
+     width: 100%;
+     
+     margin: 10%;
+     background-color: #d7e626;
+     border: 1px solid #e0e0e0;
+ }
+ 
 
 #banerClientes {
     background-image: url("img/banerIngresar.png");
@@ -1338,6 +1333,11 @@ footer .derechos {
         padding: 0 20px;
         overflow: auto;
     }
+
+    #banerClientes {
+        padding: 0 20px;
+        overflow: auto;
+    }
     #caracteristicas .caracter-box {
         width: 155px;
         margin: 0 0 15px 0;
@@ -1473,6 +1473,27 @@ footer .derechos {
         padding: 10px;
         top: 59%;
     }
+
+    .contenedorFormularioClientes{
+        width: 200%;
+        margin: 10px;
+        padding: 30px 10px;
+        
+
+    }
+
+    .table {
+        width: 80%;
+        
+        
+        background-color: #d7e626;
+        border: 1px solid #e0e0e0;
+    }
+
+
+
+
+
 }
 
 
