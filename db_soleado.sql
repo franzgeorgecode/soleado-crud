@@ -19,6 +19,6 @@ CREATE TABLE IF NOT EXISTS clientes (
 -- Inserta ejemplos cómicos de registros de usuarios
 INSERT INTO clientes (identificacion, nombres, apellidos, direccion, telefono, fecha_nacimiento)
 VALUES
-  (3206789, 'Bart', 'Simpson', 'Calle de los Travesuras, Springfield', '555-1234', '1990-04-01'),
-  (1175490, 'Homer', 'Simpson', '742 Evergreen Terrace, Springfield', '555-5678', '1956-05-12'),
-  (2315480, 'Lisa', 'Simpson', 'Avenida de la Sabiduría, Springfield', '555-4321', '1981-05-09');
+ (3206789, 'Bart', 'Simpson', 'Calle de los Travesuras, Springfield', '5551234', '01/04/1990'),
+  (1175490, 'Homer', 'Simpson', '742 Evergreen Terrace, Springfield', '5555678', '12/05/1956'),
+  (2315480, 'Lisa', 'Simpson', 'Avenida de la Sabiduría, Springfield', '5554321', '09/05/1981');
